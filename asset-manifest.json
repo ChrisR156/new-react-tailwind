@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/new-react-tailwind/static/css/main.cf7f2a49.css",
-    "main.js": "/new-react-tailwind/static/js/main.631177e4.js",
-    "index.html": "/new-react-tailwind/index.html",
-    "main.cf7f2a49.css.map": "/new-react-tailwind/static/css/main.cf7f2a49.css.map",
-    "main.631177e4.js.map": "/new-react-tailwind/static/js/main.631177e4.js.map"
+    "main.css": "/first-branch/static/css/main.cf7f2a49.css",
+    "main.js": "/first-branch/static/js/main.631177e4.js",
+    "index.html": "/first-branch/index.html",
+    "main.cf7f2a49.css.map": "/first-branch/static/css/main.cf7f2a49.css.map",
+    "main.631177e4.js.map": "/first-branch/static/js/main.631177e4.js.map"
   },
   "entrypoints": [
     "static/css/main.cf7f2a49.css",
