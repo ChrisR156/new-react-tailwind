@@ -1,8 +1,16 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import {IoIosArrowDown} from "react-icons/io"
 import {TfiWorld} from 'react-icons/tfi'
+import {AiOutlineClose} from 'react-icons/ai'
+import {AiOutlineMenu} from 'react-icons/ai'
 
 const Navbar = () => {
+
+  const [navClick, setnavClick] = useState(false)
+
+  const handleNavClick = ()=>{
+    setnavClick(!navClick)
+  }
 
   useEffect (() => {
     window.addEventListener('scroll', ()=>{
@@ -25,9 +33,9 @@ const Navbar = () => {
 
   return (
     <div className='w-[100%] fixed z-50'>
-    <div id='firstDiv' className='[w-100%] bg-white h-[80px] flex flex-row px-6 transition-all'>
+    <div id='firstDiv' className='[w-100%] bg-white h-[80px] justify-between flex flex-row px-6 transition-all'>
       <div id='react' className='title  h-[100%] w-[15%] justify-center flex items-center font-logoMain text-[50px] text-red-600'>React.</div>
-      <div className='resources  h-[100%] w-[50%] flex items-center '>
+      <div className='resources hidden lg:flex  h-[100%] w-[50%] items-center '>
         <ul className='flex flex-row '>
         <li className='p-2 flex flex-row items-center'>Creation <IoIosArrowDown className='ml-1'/></li>
         <li className='p-2 flex flex-row items-center'>Creation <IoIosArrowDown className='ml-1'/></li>
@@ -41,13 +49,16 @@ const Navbar = () => {
 
         </ul>
       </div>
-      <div className='w-[35%] flex flex-row justify-end items-center'>
+      <div className='w-[35%] hidden lg:flex flex-row justify-end items-center'>
         <div className='p-4 '><TfiWorld size={20} className='text-green-600'/></div>
         <div className='p-1 flex items-center text-[30px]'>|</div>
         <div className='p-4 '>Log In</div>
         <button id='button' className='p-4 h-[40px] text-white flex items-center justify-center rounded-3xl w-[150px] bg-blue-500'>Get Started</button>
       </div>
       
+      <div onClick={handleNavClick} className='flex items-center justify-center lg:hidden'>{
+          !navClick ? (<AiOutlineMenu size={30} />) : (<AiOutlineClose size={30}/>)
+        }</div>
     </div>
     </div>
   )
