@@ -24,7 +24,7 @@ const Navbar = () => {
 
 
   return (
-    <div className='w-[100%] fixed'>
+    <div className='w-[100%] fixed z-50'>
     <div id='firstDiv' className=' bg-white h-[80px] flex flex-row px-12 transition-all'>
       <h1 id='react' className='LogoMain h-[100%] w-[10%] text-[40px] font-logoMain flex justify-center items-center transition-all text-red-600'>React.</h1>
       <p className='ContentHeader ml-[30px] h-[100%] w-[50%] flex flex-row '>
