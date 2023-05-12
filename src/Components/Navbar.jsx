@@ -25,27 +25,28 @@ const Navbar = () => {
 
   return (
     <div className='w-[100%] fixed z-50'>
-    <div id='firstDiv' className=' bg-white h-[80px] flex flex-row px-12 transition-all'>
-      <h1 id='react' className='LogoMain h-[100%] w-[10%] text-[40px] font-logoMain flex justify-center items-center transition-all text-red-600'>React.</h1>
-      <p className='ContentHeader ml-[30px] h-[100%] w-[50%] flex flex-row '>
-        <ul className='md:flex hidden  flex-row items-center'>
-          <li className='flex flex-row items-center'>Creation <IoIosArrowDown className='ml-2'/></li>
-          <li className='flex flex-row items-center mx-8'>Business <IoIosArrowDown className='ml-2'/></li>
-          <li className='flex flex-row items-center'>Growth <IoIosArrowDown className='ml-2'/></li>
-          <li className='flex flex-row items-center mx-8'>Resources <IoIosArrowDown className='ml-2'/></li>
-          <li className='flex flex-row items-center'>Enterprise <IoIosArrowDown className='ml-2'/></li>
-          <li className='text-[30px] mx-8 text-gray-300'>|</li>
-          <li className='mr-10'>Pricing</li>
-          <li className=''>Support</li>
-          <ul className='flex flex-row ml-[20%] justify-center items-center'>
-          <li><TfiWorld size={18}/></li>
-          <li className='mx-2 text-[30px] text-gray-300'>|</li>
-          <li className='w-[50px] mr-8 text-center underline text-blue-300'>Log In</li>
-          <button id='button' className='transition-all h-[42px] w-[150px] bg-blue-600 text-white rounded-[30px]'>Get Started</button>
-          </ul>
+    <div id='firstDiv' className='[w-100%] bg-white h-[80px] flex flex-row px-6 transition-all'>
+      <div id='react' className='title  h-[100%] w-[15%] justify-center flex items-center font-logoMain text-[50px] text-red-600'>React.</div>
+      <div className='resources  h-[100%] w-[50%] flex items-center '>
+        <ul className='flex flex-row '>
+        <li className='p-2 flex flex-row items-center'>Creation <IoIosArrowDown className='ml-1'/></li>
+        <li className='p-2 flex flex-row items-center'>Creation <IoIosArrowDown className='ml-1'/></li>
+        <li className='p-2 flex flex-row items-center'>Creation <IoIosArrowDown className='ml-1'/></li>
+        <li className='p-2 flex flex-row items-center'>Creation <IoIosArrowDown className='ml-1'/></li>
+        <li className='p-2 flex flex-row items-center'>Creation <IoIosArrowDown className='ml-1'/></li>
+        <li className='p-2 flex items-center text-[30px]'>|</li>
+        <li className='p-2 xl:flex hidden flex-row items-center'>Creation</li>
+        <li className='p-2 xl:flex hidden flex-row items-center'>Creation</li>
+        <li className='p-2 xl:hidden flex flex-row items-center text-blue-500'>More <IoIosArrowDown className='ml-1'/></li>
+
         </ul>
-      
-      </p>
+      </div>
+      <div className='w-[35%] flex flex-row justify-end items-center'>
+        <div className='p-4 '><TfiWorld size={20} className='text-green-600'/></div>
+        <div className='p-1 flex items-center text-[30px]'>|</div>
+        <div className='p-4 '>Log In</div>
+        <button id='button' className='p-4 h-[40px] text-white flex items-center justify-center rounded-3xl w-[150px] bg-blue-500'>Get Started</button>
+      </div>
       
     </div>
     </div>
