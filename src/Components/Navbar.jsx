@@ -22,6 +22,7 @@ const Navbar = () => {
         document.getElementById('button').style.height = '32px'
         document.getElementById('lineOne').style.fontSize = '30px'
         document.getElementById('lineTwo').style.fontSize = '30px'
+        
       } else{
         document.getElementById('firstDiv').style.height = "80px"
         document.getElementById("react").style.fontSize = '40px'
@@ -30,6 +31,7 @@ const Navbar = () => {
         document.getElementById('button').style.height = '42px'
         document.getElementById('lineOne').style.fontSize = '40px'
         document.getElementById('lineTwo').style.fontSize = '40px'
+        
       }
     })
   }, [])
@@ -57,13 +59,19 @@ const Navbar = () => {
         <div className='p-4 '><TfiWorld size={20} className='text-blue-600'/></div>
         <div id='lineTwo' className='p-1 flex items-center text-[40px] text-gray-200'>|</div>
         <div className='p-4 '>Log In</div>
-        <button id='button' className='p-4 h-[40px] text-white flex items-center justify-center rounded-3xl w-[150px] bg-blue-500'>Get Started</button>
+        <button id='button' className='p-4 h-[40px] text-white hover:text-black flex items-center justify-center rounded-3xl w-[150px] bg-blue-500 hover:bg-blue-400 transition duration-300'>Get Started</button>
       </div>
       
       <div onClick={handleNavClick} className='flex items-center justify-center lg:hidden'>{
           !navClick ? (<AiOutlineMenu size={30} />) : (<AiOutlineClose size={30}/>)
         }</div>
+        
     </div>
+       <div className='h-[100vh] w-[100%]'>
+          <div className={!navClick ? 'w-[100%] h-[50%] top-[-100%] left-0  transition duration-200' : 'h-[50%] top-0 left-0 w-[100%] bg-white transition duration-200 '}>
+
+          </div>
+       </div>
     </div>
   )
 }
