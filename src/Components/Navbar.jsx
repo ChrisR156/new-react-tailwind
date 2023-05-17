@@ -68,7 +68,7 @@ const Navbar = () => {
         
     </div>
        <div className='h-[100vh] w-[100%]'>
-          <div className={!navClick ? 'w-[100%] h-[50%] top-[-100%] left-0  transition duration-200 lg:hidden' : 'lg:hidden h-[50%] top-0 left-0 w-[100%] bg-white transition duration-200 '}>
+          <div className={!navClick ? 'w-[100%] h-[50%] top-[-100%] left-0  transition duration-200 lg:hidden ease-in-out' : 'lg:hidden ease-in-out h-[50%] top-0 left-0 w-[100%] bg-white transition duration-200 '}>
 
           </div>
        </div>
