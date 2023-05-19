@@ -13,7 +13,7 @@ const Main = () => {
         </div>
 
         <div className='wrapperLower w-[100%] flex justify-center items-center'>
-        <div className='fraimTag h-[40px] w-[200px] z-30 mb-[400px] mr-[700px] rounded-[35px] bg-[rgba(225,225,225,0.3)] backdrop-blur border-[2px] border-[rgba(222,222,222,0.3)] absolute items-center flex justify-center text-white'>Make Your Selection</div>
+        <div className='frameTag h-[40px] w-[200px] z-30 mb-[400px] mr-[700px] rounded-[35px] bg-[rgba(225,225,225,0.3)] backdrop-blur border-[2px] border-[rgba(222,222,222,0.3)] absolute items-center flex justify-center text-white'>Make Your Selection</div>
         <div className='frameMain h-[590px] w-[590px] bg-[rgba(225,225,225,0.3)] border-[2px] border-[rgba(222,222,222,0.3)] rounded-[2%] backdrop-blur flex justify-center items-center'>
           <img className='h-[563px] W-[570px]' src={Second} alt='/'/>
         </div>

@@ -38,7 +38,7 @@ const Navbar = () => {
 
 
   return (
-    <div className='w-[100%] fixed z-50'>
+    <div className='w-[100%] h-[80px] fixed z-50'>
     <div id='firstDiv' className='[w-100%] bg-white h-[80px] justify-between flex flex-row px-6 transition-all'>
       <div id='react' className='title  h-[100%] w-[15%] justify-center flex items-center font-logoMain text-[50px] text-red-600'>React.</div>
       <div className='resources hidden lg:flex  h-[100%] w-[50%] items-center '>
@@ -67,10 +67,10 @@ const Navbar = () => {
         }</div>
         
     </div>
-       <div className='h-[100vh] w-[100%]'>
-          <div className={!navClick ? 'w-[100%] h-[50%] top-[-100%] left-0  transition duration-200 lg:hidden ease-in-out' : 'lg:hidden ease-in-out h-[50%] top-0 left-0 w-[100%] bg-white transition duration-200 '}>
+       
+          <div className={!navClick ? 'w-[100%] h-[500px] top-[-100%] hidden left-0  transition duration-200 lg:hidden ease-in-out' : 'lg:hidden ease-in-out h-[500px] top-0 left-0 w-[100%] bg-white transition duration-200 '}>
 
-          </div>
+          
        </div>
     </div>
   )
