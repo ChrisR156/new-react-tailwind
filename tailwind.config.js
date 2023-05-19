@@ -7,7 +7,19 @@ module.exports = {
     extend: {
       fontFamily: {
         logoMain: ["Darumadrop One"]
+      },
+
+      keyframes:{
+        forward: {
+          '0%, 100%':{transform: 'translateX(5px)'},
+          '50%':{transform: 'translateX(-5px)'},
+        }
+      },
+
+      animation:{
+        forward: 'forward 2s ease-in-out infinite'
       }
+
     },
   },
   plugins: [],
